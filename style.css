@@ -4,6 +4,7 @@ html{
     background-color:rgb(0, 202, 117);
 }
 header{
+    font-size: 14px;
     display: flex;
     justify-content: center;
 }
@@ -12,7 +13,7 @@ header{
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
 }
 fieldset{
@@ -21,4 +22,31 @@ fieldset{
 .personal_data, .options, .recommend, .languages {
     display: flex;
     flex-direction: column;
+}
+.personal_data input{
+   height: 30px;
+}
+.personal_data{
+    margin-top: 20px;
+    gap: 15px;
+}
+#select_options{
+    height: 40px;
+}
+#submit_button{
+    background-color:rgb(0, 202, 117);
+    border: 1px solid grey;
+    font-size:20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#text{
+    padding: 10px;
+}
+#comments{
+    margin-bottom: 10px;
+}
+.languages, .recommend {
+    gap: 5px;
+    
 }
