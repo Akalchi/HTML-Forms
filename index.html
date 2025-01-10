@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="title">
+    <h1>GeeksForGeeks Survey Form</h1>
+</header>
+
+<form class="form_container">
+    <fieldset class="personal_data">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name">
+        <label for="Email">Email</label>
+        <input type="text" placeholder="Enter your email">
+        <label for="Age">Age</label>
+        <input type="text" placeholder="Enter your age">
+       
+    </fieldset> 
+    <fieldset class="options">
+    <p>Which option best describes you?</p>
+      <select id="select_options">
+        <option value="value1">Student</option>
+        <option value="value2" selected>Worker</option>
+        <option value="value3">Teacher</option>
+        </select>
+    </fieldset>
+
+   <!--v class="recommend">
+        <p>Would you recommend GeeksForGeeks to a friend?</p>
+        <label>
+          <input class="recommend_input" type="radio" name="recommend" value="yes"> Yes
+        </label>
+        <label>
+          <input class="recommend_input" type="radio" name="recommend" value="no"> No
+        </label>
+        <label>
+          <input class="recommend_input" type="radio" name="recommend" value="maybe"> Maybe
+        </label>
+      </div>-->
+
+     <fieldset class="recommend">
+        <p>Would you recommend GeeksForGeeks to a friend?</p>
+        <div>
+          <input class="recommend_input" type="radio">
+          <label class="recommend_label" for="">Yes</label>
+        </div>
+        <div>
+          <input class="recommend_input" type="radio">
+          <label class="recommend_label"for="">No</label>
+        </div>
+        <div>
+          <input class="recommend_input" type="radio">
+          <label class="recommend_label"for="">Maybe</label>
+        </div>
+     </fieldset> 
+      <fieldset class="languages">
+        <legend>Which programming languages do you know?</legend>
+        <div>
+        <input type="checkbox" name="languages" value="C">
+        <label for="">C</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="C++"> 
+        <label for="">C++</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="C#"> 
+        <label for="">C#</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="Java"> 
+        <label for="">Java</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="Python"> 
+        <label for="">Python</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="JavaScript"> 
+        <label for="">JavaScript</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="React">
+        <label for="">React</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="Angular"> 
+        <label for="">Angular</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="Django"> 
+        <label for="">Django</label>
+        </div>
+        <div>
+        <input type="checkbox" name="languages" value="Spring"> 
+        <label for="">Spring</label>
+        </div>
+      </fieldset>
+
+    <label for="comments" id="comments">Any comments or suggestions</label>
+    <textarea name="textarea" id="text"></textarea>
+
+    <input id="submit_button" type="submit" value="Submit">
+</form>
+</body>
+</html>
